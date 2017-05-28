@@ -1,0 +1,132 @@
+body {
+	background-color: #002b80;
+	background-image: url('https://static.pexels.com/photos/241129/pexels-photo-241129.jpeg');
+	background-position: center;
+	background-size: cover;
+	background-repeat: repeat;
+	box-sizing: border-box;
+	position: relative;
+	padding: 10px;
+	margin: 0;
+	height: 100vh;
+}
+button {
+	cursor: pointer;
+	font-family: 'Lato', sans-serif;
+	outline: none;
+}
+.board h1 {
+	background-color: rgba(230, 153, 0, 0.5);
+	color: rgb(230, 153, 0);
+	font-family: 'Lato', sans-serif;
+	margin: 0;
+	margin-left: 84px;
+	padding: 10px;
+	text-transform: uppercase;
+	word-spacing: 15px;
+}
+.column-container {
+	align-items: flex-start;
+	display: flex;
+	padding: 10px;
+}
+/* ------- buttons -------------- */
+.create-column {
+	background-color: #fff;
+	border: 1px solid #0000cc;
+	border-radius: 6px;
+	box-shadow: 4px 4px 15px rgb(230, 153, 0);
+	font-size: 0.8em;
+	font-weight: bold;
+	height: 59px;
+	margin: 10px 22px;
+	position: absolute;
+	position: fixed;
+	top: 0;
+	left: -10px;
+}
+.create-column:hover {
+	box-shadow: none;
+	box-shadow: inset 0 0 7px #0000cc;
+	color: #fff;
+	text-shadow: 0 0 3px #0000cc;
+}
+.btn-delete {
+	background: transparent;
+	border: none;
+	color: #000;
+	font-size: 1em;
+	font-weight: bold;
+	position: absolute;
+	top: 7px;
+	left: 10px;
+	text-shadow: 0 0 13px #fff;
+}
+.btn-card-delete {
+	background: transparent;
+	border: none;
+	color: #000;
+	font-size: 1em;
+	font-weight: bold;
+}
+.add-card {
+	background: transparent;
+	border: 1px solid #0000cc;
+	border-radius: 5px 5px 5px 5px;
+	margin-left: 10px
+}
+.add-card:hover {
+	color: #fff;
+	background-color: #00e600;
+	text-shadow: 1px 1px #000;
+}
+/* ------------------ columns ----------- */
+.column {
+	background-color: rgba(51, 255, 51, 0.5);
+	border-left: 2px solid #0000cc;
+	border-right: 2px solid #0000cc;
+	border-radius: 15px 50px 5px 5px;
+	display: inline-block;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	min-height: 130px;
+	min-width: 200px;
+	max-width: 28%;
+	padding: 0 10px 10px 10px;
+	position: relative;
+}
+.column-title {
+	border-bottom: 1px solid #000;
+	font-family: 'Berkshire Swash', cursive;
+	margin: 0;
+	padding: 5px;
+	text-shadow: 0 0 4px #fff;
+	margin-left: 29px;
+}
+/* ------------------ cards ------------- */
+.card-list {
+	list-style-type: none;
+	min-height: 40px;
+	padding: 0;
+}
+.card {
+	background-color: #f2f2f2;
+	border: 0 0 -5px #000;
+	border-radius: 5px 15px 5px 2px;
+	margin: 0;
+	padding: 0;
+}
+p {
+	font-family: 'Marck Script', cursive;
+	font-size: 1.5em;
+	margin: 7px;
+}
+.card-placeholder {
+  box-sizing: border-box;
+  display: block;
+  height: 60px;
+  margin-bottom: 5px;
+  border: 2px solid lightgrey;
+  background-color: rgba(102, 153, 255, 0.5);
+}
+
